@@ -22,10 +22,10 @@ function ldate {
           }
 
 
-
+#main
 path=/var/fedena/fedena.conf
 count=$(wc -l $path| gawk '{print $1}')
-#filep=cat /srv/fedena_app/fedena_erp/vendor/plugins/acts_as_multi_school/config/multischool_settings.yml | grep name | cut -f2 -d":"
+#to find the required file-filep=cat /srv/fedena_app/fedena_erp/vendor/plugins/acts_as_multi_school/config/multischool_settings.yml | grep name | cut -f2 -d":"
 ts=$(date +'%d%m%y')
 if [ -f $path ]
 then
